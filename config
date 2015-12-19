@@ -1,0 +1,32 @@
+[global_config]
+  geometry_hinting = False
+  handle_size = 2
+  tab_position = hidden
+  title_inactive_bg_color = "#dedede"
+  title_inactive_fg_color = "#f9f9f9"
+  title_receive_bg_color = "#d69087"
+  title_receive_fg_color = "#f9f9f9"
+  title_transmit_bg_color = "#d84c3f"
+  title_transmit_fg_color = "#f9f9f9"
+[keybindings]
+  full_screen = <Primary><Shift>F11
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.78
+    background_image = None
+    background_type = transparent
+    font = Droid Sans Mono 10
+    foreground_color = "#ffffff"
+    palette = "#2d2d2d:#d84c3f:#49d637:#d6d638:#4937d6:#d638d6:#37d6d6:#dedede:#333333:#d69087:#90d687:#d6d687:#9087d6:#d687d6:#87d6d6:#f9f9f9"
+    scroll_on_output = False
+    use_system_font = False
