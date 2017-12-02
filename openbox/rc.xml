@@ -302,6 +302,11 @@
     </action>
   </keybind>
   <keybind key="W-w">
+	  <keybind key="w">
+		  <action name="ShowMenu">
+			  <menu>client-list-menu</menu>
+		  </action>
+	  </keybind>
 	  <keybind key="h">
 		  <action name="UnMaximize"/>
 		  <action name="MoveResizeTo">
