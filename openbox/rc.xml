@@ -302,6 +302,11 @@
     </action>
   </keybind>
   <keybind key="W-w">
+	  <keybind key="t">
+		  <action name="Execute">
+			  <command>~/.config/openbox/transset.sh</command>
+		  </action>
+	  </keybind>
 	  <keybind key="w">
 		  <action name="ShowMenu">
 			  <menu>client-list-menu</menu>
