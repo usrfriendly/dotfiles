@@ -52,17 +52,10 @@
 		<separator/>
 		<menu id="client-list-menu"/>
 		<separator/>
-		<menu id="root-menu-144727" label="Session">
-			<item label="Logout">
-				<action name="Execute">
-					<execute>mate-session-save --logout-dialog</execute>
-				</action>
-			</item>
-			<item label="Shut Down">
-				<action name="Execute">
-					<execute>mate-session-save --shutdown-dialog</execute>
-				</action>
-			</item>
-		</menu>
+		<item label="Exit">
+			<action name="Execute">
+				<execute>xfce4-session-logout</execute>
+			</action>
+		</item>
 	</menu>
 </openbox_menu>
