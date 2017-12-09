@@ -1,4 +1,4 @@
 #/bin/bash
-trans="$(zenity --entry --text='Transparency' --entry-text=100)"
+trans="$(echo "Transparency" | dmenu -p "Transparency (1-100)")"
 
 compton-trans ${trans}
