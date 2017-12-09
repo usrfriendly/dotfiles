@@ -15,10 +15,9 @@
 		<menu execute="xdg_menu --root-menu ~/.config/menus/mate-applications.menu --format openbox3-pipe" id="applications-pipemenu" label="Applications"/>
 		<separator/>
 		<menu id="settings-menu" label="Settings">
-			<menu execute="xdg_menu --root-menu ~/.config/menus/mate-settings.menu --format openbox3-pipe" id="mate-settings-pipemenu" label="Mate Settings"/>
-			<item label="Mate Control Center">
+			<item label="XFCE Settings">
 				<action name="Execute">
-					<command>mate-control-center</command>
+					<command>xfce4-settings-manager</command>
 				</action>
 			</item>
 			<menu label="Openbox" id="ob-settings-menu">

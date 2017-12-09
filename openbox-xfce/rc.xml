@@ -394,10 +394,13 @@
 	  <action name="ShowMenu"><menu>root-menu</menu></action>
   </keybind>
   <!-- Keybindings for running applications -->
-  <keybind key="A-F2">
+  <keybind key="W-F1">
     <action name="Execute">
-      <command>mate-panel --run-dialog</command>
+      <command>xfce4-popup-whiskermenu</command>
     </action>
+  </keybind>
+  <keybind key="A-F2">
+	  <action name="Execute"><command>xfce4-appfinder</command></action>
   </keybind>
   <!-- Launch scrot when Print is pressed -->
   <keybind key="Print">
