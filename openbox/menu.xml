@@ -12,15 +12,9 @@
 			</action>
 		</item>
 		<separator/>
-		<menu execute="xdg_menu --root-menu ~/.config/menus/mate-applications.menu --format openbox3-pipe" id="applications-pipemenu" label="Applications"/>
+		<menu execute="xdg_menu --root-menu /etc/xdg/menus/arch-applications.menu --format openbox3-pipe" id="applications-pipemenu" label="Applications"/>
 		<separator/>
 		<menu id="settings-menu" label="Settings">
-			<menu execute="xdg_menu --root-menu ~/.config/menus/mate-settings.menu --format openbox3-pipe" id="mate-settings-pipemenu" label="Mate Settings"/>
-			<item label="Mate Control Center">
-				<action name="Execute">
-					<command>mate-control-center</command>
-				</action>
-			</item>
 			<menu label="Openbox" id="ob-settings-menu">
 			<item label="Edit rc.xml">
 				<action name="Execute">
@@ -55,9 +49,7 @@
 		<separator/>
 		<menu id="root-menu-144727" label="Session">
 			<item label="Logout">
-				<action name="Execute">
-					<execute>mate-session-save --logout-dialog</execute>
-				</action>
+				<action name="Exit"/>
 			</item>
 			<item label="Shut Down">
 				<action name="Execute">
