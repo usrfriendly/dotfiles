@@ -24,12 +24,12 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#222d32"
+    background_color = "#444444"
     background_darkness = 0.78
     cursor_color = "#ffffff"
     font = Noto Mono 10
-    foreground_color = "#cfd8dc"
-    palette = "#222d32:#d84c3f:#49d637:#d6d638:#4937d6:#d638d6:#37d6d6:#dedede:#29353b:#d69087:#90d687:#d6d687:#9087d6:#d687d6:#87d6d6:#f9f9f9"
+    foreground_color = "#f9f9f9"
+    palette = "#444444:#d84c3f:#49d637:#d6d638:#4937d6:#d638d6:#37d6d6:#dedede:#646464:#d69087:#90d687:#d6d687:#9087d6:#d687d6:#87d6d6:#f9f9f9"
     show_titlebar = False
     use_system_font = False
   [[minimal]]
