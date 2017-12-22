@@ -1,4 +1,5 @@
 [global_config]
+  enabled_plugins = ,
   extra_styling = False
   handle_size = 2
   homogeneous_tabbar = False

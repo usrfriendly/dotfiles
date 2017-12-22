@@ -49,7 +49,7 @@
 </placement>
 
 <theme>
-  <name>Clearlooks</name>
+  <name>Numix</name>
   <titleLayout>NLIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -303,19 +303,85 @@
   </keybind>
 
   <!-- Keybindings for running applications -->
-  <keybind key="W-e">
-    <action name="Execute">
-      <startupnotify>
-        <enabled>true</enabled>
-        <name>Konqueror</name>
-      </startupnotify>
-      <command>kfmclient openProfile filemanagement</command>
-    </action>
-  </keybind>
-  <!-- Launch scrot when Print is pressed -->
-  <keybind key="Print">
-    <action name="Execute"><command>scrot</command></action>
-  </keybind>
+<keybind key="W-w">
+	<keybind key="h">
+		<action name="UnMaximize"/>
+		<action name="MoveResizeTo">
+			<x>0</x>
+			<y>0</y>
+			<width>50%</width>
+			<height>100%</height>
+		</action>
+	</keybind>
+	<keybind key="l">
+		<action name="UnMaximize"/>
+		<action name="MoveResizeTo">
+			<x>-0</x>
+			<y>0</y>
+			<width>50%</width>
+			<height>100%</height>
+		</action>
+	</keybind>
+	<keybind key="k">
+		<action name="UnMaximize"/>
+		<action name="MoveResizeTo">
+			<x>0</x>
+			<y>0</y>
+			<width>100%</width>
+			<height>50%</height>
+		</action>
+	</keybind>
+	<keybind key="j">
+		<action name="UnMaximize"/>
+		<action name="MoveResizeTo">
+			<x>0</x>
+			<y>-0</y>
+			<width>100%</width>
+			<height>50%</height>
+		</action>
+	</keybind>
+	<keybind key="y">
+		<action name="UnMaximize"/>
+		<action name="MoveResizeTo">
+			<x>0</x>
+			<y>0</y>
+			<width>50%</width>
+			<height>50%</height>
+		</action>
+	</keybind>
+	<keybind key="u">
+		<action name="UnMaximize"/>
+		<action name="MoveResizeTo">
+			<x>-0</x>
+			<y>0</y>
+			<width>50%</width>
+			<height>50%</height>
+		</action>
+	</keybind>
+	<keybind key="b">
+		<action name="UnMaximize"/>
+		<action name="MoveResizeTo">
+			<x>0</x>
+			<y>-0</y>
+			<width>50%</width>
+			<height>50%</height>
+		</action>
+	</keybind>
+	<keybind key="n">
+		<action name="UnMaximize"/>
+		<action name="MoveResizeTo">
+			<x>-0</x>
+			<y>-0</y>
+			<width>50%</width>
+			<height>50%</height>
+		</action>
+	</keybind>
+	<keybind key="m">
+		<action name="ToggleMaximize"/>
+	</keybind>
+</keybind>
+  <!-- Extra Integration -->
+
 </keyboard>
 
 <mouse>
