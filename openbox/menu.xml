@@ -12,35 +12,23 @@
   <item label="Web browser">
     <action name="Execute"><execute>x-www-browser</execute></action>
   </item>
+  <!-- This requires the presence of the 'openbox-menu' package to work -->
+  <menu id="/Debian" />
   <separator />
-  <menu label="Applications" id="mate-applications-menu" execute="openbox-menu mate-applications.menu"/>
+  <menu id="applications-menu" label="Applications" execute="openbox-menu -i lxde-applications.menu"/>
   <separator />
-  <menu label="Settings" id="settings-menu">
-	  <item label="Edit rc.menu">
-		  <action name="Execute">
-			  <execute>terminator -e "vim ~/.config/openbox/rc.xml"</execute>
-		  </action>
-	  </item>
-	  <item label="Edit menu.xml">
-		  <action name="Execute">
-			  <execute>terminator -e "vim ~/.config/openbox/menu.xml"</execute>
-		  </action>
-	  </item>
-	  <item label="Edit compton.conf">
-		  <action name="Execute">
-			  <execute>terminator -e "vim ~/.config/compton.conf"</execute>
-		  </action>
-	  </item>
-  </menu>
-  <item name="Session">
-	  <action name="Execute">
-		  <execute>mate-session-save --logout-dialog</execute>
-	  </action>
+  <item label="ObConf">
+    <action name="Execute"><execute>obconf</execute></action>
   </item>
-  <item name="Power">
-	  <action name="Execute">
-		  <execute>mate-session-save --shutdown-dialog</execute>
-	  </action>
+  <item label="Reconfigure">
+    <action name="Reconfigure" />
+  </item>
+  <item label="Restart">
+    <action name="Restart" />
+  </item>
+  <separator />
+  <item label="Exit">
+    <action name="Exit" />
   </item>
 </menu>
 
