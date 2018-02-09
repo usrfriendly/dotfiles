@@ -1,0 +1,2 @@
+Xautolock.time: 	5
+Xautolock.locker: 	~/.local/scripts/lock.sh
