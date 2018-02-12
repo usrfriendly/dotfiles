@@ -21,15 +21,15 @@ font pango:monospace 8
 
 # Set window colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #222d32 #222d32 #ffffff #2e9ef4   #00bcd2
-client.focused_inactive #222d32 #222d32 #ffffff #222d32   #222d32
-client.unfocused	#222d32 #222d32 #888888 #222d32   #222d32
-client.urgent           #222d32 #900000 #ffffff #222d32   #d843cf
-client.placeholder      #000000 #222d32 #ffffff #000000   #222d32
+client.focused          #2f343f #2f343f #ffffff #2e9ef4   #5294e2
+client.focused_inactive #2f343f #2f343f #ffffff #2f343f   #2f343f
+client.unfocused	#2f343f #2f343f #888888 #2f343f   #2f343f
+client.urgent           #2f343f #900000 #ffffff #2f343f   #d843cf
+client.placeholder      #000000 #2f343f #ffffff #000000   #2f343f
 
 client.background       #ffffff
 
-gaps inner 10
+#gaps inner 10
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -42,15 +42,15 @@ gaps inner 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+Shift+d exec dmenu_run -fn "Noto Sans Mono-10" -nb "#222d32" -nf "#f9f9f9" -sb "#00bcd2" -sf "#f9f9f9"
+bindsym $mod+Shift+d exec dmenu_run -fn "Noto Sans Mono-10" -nb "#2f343f" -nf "#f9f9f9" -sb "#5294e2" -sf "#f9f9f9"
 
-bindsym $mod+d exec i3-dmenu-desktop --dmenu='dmenu -fn "Noto Sans Mono-10" -nb "#222d32" -nf "#f9f9f9" -sb "#00bcd2" -sf "#f9f9f9"'
+bindsym $mod+d exec i3-dmenu-desktop --dmenu='dmenu -fn "Noto Sans Mono-10" -nb "#2f343f" -nf "#f9f9f9" -sb "#5294e2" -sf "#f9f9f9"'
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -176,10 +176,10 @@ bar {
 	
 	font pango:Noto Sans Mono:10
 	colors {
-		background #222d32
-		active_workspace #ffffff #222d32
-		inactive_workspace #888888 #222d32
-		focused_workspace #ffffff #00bcd2
+		background #2f343f
+		active_workspace #ffffff #2f343f
+		inactive_workspace #888888 #2f343f
+		focused_workspace #ffffff #5294e2
 	}
 }
 exec --no-startup-id xfce4-power-manager
