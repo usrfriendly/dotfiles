@@ -1,23 +1,18 @@
 [global_config]
-  enabled_plugins = ,
-  extra_styling = False
-  handle_size = 2
-  homogeneous_tabbar = False
-  scroll_tabbar = True
+  handle_size = 1
   tab_position = hidden
-  title_inactive_bg_color = "#dedede"
-  title_inactive_fg_color = "#2d2d2d"
-  title_receive_bg_color = "#d69087"
-  title_receive_fg_color = "#2d2d2d"
-  title_transmit_bg_color = "#d84c3f"
-  title_transmit_fg_color = "#f9f9f9"
+  title_inactive_bg_color = "#383c4a"
+  title_inactive_fg_color = "#d3dae3"
+  title_receive_bg_color = "#5c3566"
+  title_receive_fg_color = "#d3dae3"
+  title_transmit_bg_color = "#5294e2"
+  title_transmit_fg_color = "#d3dae3"
 [keybindings]
-  full_screen = <Primary><Shift>F11
+  help = None
 [layouts]
   [[default]]
     [[[child1]]]
       parent = window0
-      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
@@ -25,11 +20,9 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#222d32"
-    background_darkness = 0.78
-    cursor_color = "#ffffff"
-    font = Noto Sans Mono 10
-    foreground_color = "#f9f9f9"
-    palette = "#222d32:#d84c3f:#49d637:#d6d638:#4937d6:#d638d6:#37d6d6:#dedede:#29353b:#d69087:#90d687:#d6d687:#9087d6:#d687d6:#87d6d6:#f9f9f9"
-    show_titlebar = False
+    background_color = "#383c4a"
+    cursor_color = "#aaaaaa"
+    font = Noto Mono 10
+    foreground_color = "#d3dae3"
+    palette = "#2f343f:#a40000:#00cd00:#c4a000:#204a87:#5c3566:#00cdcd:#e5e5e5:#383c4a:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#6bffff:#ffffff"
     use_system_font = False
