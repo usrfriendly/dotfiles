@@ -1,0 +1,25 @@
+[global_config]
+  enabled_plugins = ,
+  handle_size = 4
+  smart_copy = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#222d32"
+    background_darkness = 0.8
+    cursor_color = "#aaaaaa"
+    font = Monospace 9
+    foreground_color = "#cfd8dc"
+    palette = "#222d32:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#2a373d:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    show_titlebar = False
+    urgent_bell = True
+    use_system_font = False
