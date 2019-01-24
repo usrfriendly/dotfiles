@@ -210,6 +210,8 @@ for_window [class="gucharmap|Gucharmap"] floating enable
 for_window [class="gpick|Gpick"] floating enable
 for_window [class="qjackctl"] floating enable
 for_window [class="nitrogen|Nitrogen"] floating enable
+for_window [class="spotify|Spotify"] move container to workspace 9
+for_window [class="Steam"] move container to workspace 9
 
 
 ## Disable Titlebar for i3-gaps
