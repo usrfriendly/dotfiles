@@ -1,0 +1,85 @@
+DestroyMenu "xdg_menu-Accessories"
+AddToMenu "xdg_menu-Accessories" "Accessories" Title
++		 "Application Finder" Exec xfce4-appfinder
++		 "Archive Manager" Exec file-roller 
++		 "Bitwarden" Exec bitwarden-desktop
++		 "Main Menu" Exec alacarte
++		 "Mousepad" Exec mousepad 
++		 "Orage Globaltime" Exec globaltime
++		 "Screenshot" Exec xfce4-screenshooter
++		 "Vim" Exec xterm -e vim 
++		 "Xfburn" Exec xfburn
+
+DestroyMenu "xdg_menu-Games"
+AddToMenu "xdg_menu-Games" "Games" Title
++		 "Block Attack!" Exec blocks
++		 "Checkers" Exec checkers
++		 "Sudoku" Exec sudoku
+
+DestroyMenu "xdg_menu-Graphics"
+AddToMenu "xdg_menu-Graphics" "Graphics" Title
++		 "Ristretto Image Viewer" Exec ristretto 
+
+DestroyMenu "xdg_menu-Internet"
+AddToMenu "xdg_menu-Internet" "Internet" Title
++		 "Avahi SSH Server Browser" Exec /usr/bin/bssh
++		 "Avahi VNC Server Browser" Exec /usr/bin/bvnc
++		 "Firefox" Exec /usr/lib/firefox/firefox 
+
+DestroyMenu "xdg_menu-Office"
+AddToMenu "xdg_menu-Office" "Office" Title
++		 "Dictionary" Exec xfce4-dict
++		 "Orage Calendar" Exec orage
++		 "Orage Globaltime" Exec globaltime
+
+DestroyMenu "xdg_menu-Development"
+AddToMenu "xdg_menu-Development" "Programming" Title
++		 "CMake" Exec cmake-gui 
++		 "Electron" Exec electron 
++		 "Emacs" Exec emacs 
++		 "FLUID" Exec fluid 
++		 "Qt Assistant" Exec assistant
++		 "Qt Designer" Exec designer 
++		 "Qt Linguist" Exec linguist 
++		 "Qt QDbusViewer " Exec qdbusviewer
++		 "SuperCollider IDE" Exec scide 
+
+DestroyMenu "xdg_menu-Multimedia"
+AddToMenu "xdg_menu-Multimedia" "Sound & Video" Title
++		 "Helm" Exec helm
++		 "Parole Media Player" Exec parole 
++		 "PulseAudio Volume Control" Exec pavucontrol
++		 "QjackCtl" Exec qjackctl
++		 "Qt V4L2 test Utility" Exec qv4l2
++		 "Qt V4L2 video capture utility" Exec qvidcap
++		 "Radium" Exec radium 
++		 "Renoise" Exec renoise3 
++		 "SuperCollider IDE" Exec scide 
++		 "Xfburn" Exec xfburn
++		 "ZynAddSubFX - Alsa" Exec zynaddsubfx -I alsa -O alsa
++		 "ZynAddSubFX - Jack" Exec zynaddsubfx -I jack -O jack
++		 "ZynAddSubFX - Jack (multi channel)" Exec zynaddsubfx -I jack -O jack-multi
++		 "ZynAddSubFX - OSS" Exec zynaddsubfx -I OSS -O OSS
+
+DestroyMenu "xdg_menu-System"
+AddToMenu "xdg_menu-System" "System Tools" Title
++		 "Avahi Zeroconf Browser" Exec /usr/bin/avahi-discover
++		 "Bulk Rename" Exec /usr/lib/Thunar/ThunarBulkRename 
++		 "Htop" Exec xterm -e htop
++		 "Sensor Viewer" Exec xfce4-sensors
++		 "Task Manager" Exec xfce4-taskmanager
++		 "Thunar File Manager" Exec thunar 
++		 "Tilix" Exec tilix
++		 "Xfce Terminal" Exec xfce4-terminal
+
+DestroyMenu "xdg_menu"
+AddToMenu "xdg_menu" "Applications" Title
++		 "Accessories" Popup "xdg_menu-Accessories"
++		 "Games" Popup "xdg_menu-Games"
++		 "Graphics" Popup "xdg_menu-Graphics"
++		 "Internet" Popup "xdg_menu-Internet"
++		 "Office" Popup "xdg_menu-Office"
++		 "Programming" Popup "xdg_menu-Development"
++		 "Sound & Video" Popup "xdg_menu-Multimedia"
++		 "System Tools" Popup "xdg_menu-System"
+
