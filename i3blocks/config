@@ -46,7 +46,7 @@ label=
 command=~/.config/i3blocks/scripts/volume.sh
 interval=5
 markup=pango
-min_width=100%
+min_width=100%
 
 [cpu_usage]
 label=
@@ -67,7 +67,7 @@ min_width=8
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
-instance=wlp3s0
+instance=wlan0
 color=#00FF00
 interval=10
 separator=false
@@ -89,11 +89,10 @@ interval=5
 #
 # The battery instance defaults to 0.
 [battery]
-#label=BAT1
+label=BAT
 #label=⚡
 #instance=1
 interval=30
-command=~/.config/i3blocks/scripts/bat.sh
 
 # Date Time
 #
