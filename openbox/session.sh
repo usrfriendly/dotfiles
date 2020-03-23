@@ -8,7 +8,7 @@ if [[ $ANS == "Lock Screen" ]]; then
 	xautolock -locknow
 elif [[ $ANS == "Log Out" ]]; then
 	if [[ $(eval $LOGTEST) == "Yes" ]]; then
-		i3-msg exit
+		openbox --exit
 	fi
 elif [[ $ANS == "Shut Down" ]]; then
 	if [[ $(eval $LOGTEST) == "Yes" ]]; then
