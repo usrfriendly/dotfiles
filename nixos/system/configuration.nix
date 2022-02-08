@@ -50,9 +50,7 @@
 
   # Enable the Plasma 5 Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = false;
-  services.xserver.windowmanger.jwm.enable = true;
- services.blueman.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
 
   # Configure keymap in X11
   # services.xserver.layout = "us";
@@ -69,9 +67,6 @@
   enable = true;
   alsa.enable = true;
   alsa.support32Bit = true;
-  qterminal;
-  qt5ct;
-  kvantum;
   pulse.enable = true;
   # If you want to use JACK applications, uncomment this
   jack.enable = true;
