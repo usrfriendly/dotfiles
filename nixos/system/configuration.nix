@@ -89,13 +89,21 @@
   # $ nix search wget
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-     neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-     plasma-desktop
      ark
-     kdeplasma-addons
-     bluezFull
+     bash-completion
      bitwarden
+     bluezFull
+     ecwolf
+     git
+     gzdoom
+     helvum
+     kdeplasma-addons
+     neovim
+     plasma-desktop
+     qjackctl
      sddm-kcm
+     spotify
+     vscode
      vivaldi
    ];
    programs.steam.enable = true;
