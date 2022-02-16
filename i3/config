@@ -21,10 +21,10 @@ font pango:monospace 12
 
 # Colors for WM
 # class                 border  backgr. text    indicator
-client.focused          #88C0D0 #88C0D0 #2E3440 #2E3440
-client.focused_inactive #ECEFF4 #383C4A #ECEFF4 #484e50
-client.unfocused        #383C4A #383C4A #cfd8dc #292d2e
-client.urgent           #BF616A #383C4A #fcd8dc #BF616A
+client.focused          #3DAEE9 #3DAEE9 #31363B #31363B
+client.focused_inactive #FCFCFC #31363B #FCFCFC #484E50
+client.unfocused        #31363B #31363B #CFD8DC #292D2E
+client.urgent           #BF616A #31363B #DA4453 #FCFCFC
 
 #Focus Won't Follow Mouse
 focus_follows_mouse no
@@ -211,15 +211,15 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
  bar {
 	font pango:Monospace 12, FontAwesome 12
 	colors {
-    		background #2e3440
-    		statusline #eceff4
-    		separator #88c0d0
+    		background #31363B
+    		statusline #FCFCFC
+    		separator  #3DAEE9
 		# <colorclass>	   <border> <background> <text>
-		focused_workspace  #88C0D0  #88C0D0      #2E3440
-		active_workspace   #88C0D0  #2E3440      #ECEFF4
-		inactive_workspace #88C0D0  #2E3440      #ECEFF4
-		urgent_workspace   #bf616a  #bf616a      #ECEFF4
-		binding_mode       #88C0D0  #2E3440      #ECEFF4
+		FOCUSED_WORKSPACE  #3DAEE9  #3DAEE9      #31363B
+		ACTIVE_WORKSPACE   #3DAEE9  #31363B      #FCFCFC
+		INACTIVE_WORKSPACE #3DAEE9  #31363B      #FCFCFC
+		URGENT_WORKSPACE   #DA4453  #DA4453      #FCFCFC
+		BINDING_MODE       #3DAEE9  #31363B      #FCFCFC
 	}
 	status_command i3blocks
 	tray_output primary
@@ -248,9 +248,11 @@ new_window 1pixel
 #gaps inner 0
 #gaps outer 0
 
-exec_always --no-startup-id xrandr --output DisplayPort-0 --mode 1920x1080 --refresh 60.00 --below DisplayPort-2 --output DisplayPort-0 --mode 1920x1080 --refresh 60.00
+
+exec_always --no-startup-id xrandr --output DisplayPort-0 --mode 1920x1080 --refresh 60.00 --below DisplayPort-2 --output DisplayPort-0 --mode 1920x1080 --refresh 60.00 --primary
 exec_always --no-startup-id dunst
 exec_always --no-startup-id xautolock -corners "----" -time 10 -locker "~/.config/i3/lockscreen.sh" -detectsleep -cornerdelay 1
+exec --no-startup-id /usr/lib/pam_kwallet_init
 exec --no-startup-id redshift-gtk
 exec --no-startup-id caffeine-indicator
 exec --no-startup-id udiskie -t
